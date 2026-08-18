@@ -2,7 +2,7 @@
 
 I build agentic AI tooling and ship it in production: MCP servers, custom agents, Claude Code skills, and eval harnesses. The work I care about is getting frontier models to do bounded, checkable work, and then packaging what I figure out so other people can run it too.
 
-Right now I'm building Voygent, a platform for travel advisors that runs the whole agent loop inside a chat client. It's a Cloudflare Workers MCP server with interactive in-chat UI (MCP Apps), supplier adapters, and a test harness that migrates real trip data forward and then verifies every rendered surface by vision before I trust it. I keep a running write-up of the engineering at [demo.voygent.ai/blog](https://demo.voygent.ai/blog), where I post the dead ends and the calls I made as I hit them.
+Right now I'm building Voygent, a platform for travel advisors that runs the whole agent loop inside a chat client. It's a Cloudflare Workers MCP server with interactive in-chat UI (MCP Apps), supplier adapters, and a test harness that migrates real trip data forward and then verifies every rendered surface by vision before I trust it. I keep a running write-up of the engineering at [demo.voygent.ai/blog](https://demo.voygent.ai/blog), where I post the dead ends and the calls I made as I hit them. The pace is steady: the [30-day ship log](https://demo.voygent.ai/ship-log) is a live snapshot of the cadence, reconstructed straight from git.
 
 ## What I work on
 
