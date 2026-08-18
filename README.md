@@ -2,7 +2,7 @@
 
 I build agentic AI tooling and ship it in production: MCP servers, custom agents, Claude Code skills, and eval harnesses. The work I care about is getting frontier models to do bounded, checkable work, and then packaging what I figure out so other people can run it too.
 
-Right now I'm building Voygent, a platform for travel advisors that runs the whole agent loop inside a chat client. It's a Cloudflare Workers MCP server with interactive in-chat UI (MCP Apps), supplier adapters, and a test harness that migrates real trip data forward and then verifies every rendered surface by vision before I trust it.
+Right now I'm building Voygent, a platform for travel advisors that runs the whole agent loop inside a chat client. It's a Cloudflare Workers MCP server with interactive in-chat UI (MCP Apps), supplier adapters, and a test harness that migrates real trip data forward and then verifies every rendered surface by vision before I trust it. I keep a running write-up of the engineering at [demo.voygent.ai/blog](https://demo.voygent.ai/blog), where I post the dead ends and the calls I made as I hit them.
 
 ## What I work on
 
@@ -17,6 +17,6 @@ Mostly MCP in production: server design, how tools and routers are shaped, and b
 | [mcp-tooluse-eval](https://github.com/iamneilroberts/mcp-tooluse-eval) | A cheap, bounded harness that checks whether a model picks the right tools and finishes a multi-step task against your MCP server. |
 | [scaffold](https://github.com/iamneilroberts/scaffold) | Build niche AI tools that run inside the chatbot you already pay for, using MCP. |
 | [lllm-eval](https://github.com/iamneilroberts/lllm-eval) | Benchmark local LLMs as coding agents against a deterministic in-memory repo. |
-| [claude-session-handoff](https://github.com/iamneilroberts/claude-session-handoff) | Automatic context management for Claude Code: it notices when a session is filling up, writes a handoff, and resumes after `/clear`. |
+| [voygent-demo](https://github.com/iamneilroberts/voygent-demo) | Public interactive demo of Voygent with a record/replay honesty layer (featured trips replay, off-menu trips run live), plus my running engineering blog of deep dives at [demo.voygent.ai/blog](https://demo.voygent.ai/blog). |
 
 Also here: [agent-deck](https://github.com/iamneilroberts/agent-deck) and [agent-glance](https://github.com/iamneilroberts/agent-glance) (phone-first control of local coding agents), [claude-grep](https://github.com/iamneilroberts/claude-grep) (search past Claude Code sessions), and [dba-box](https://github.com/iamneilroberts/dba-box) (an on-prem AI analyst for SQL Server), plus a couple of things I built for fun ([SQUAWK](https://github.com/iamneilroberts/SQUAWK), [LORAN](https://github.com/iamneilroberts/LORAN)).
